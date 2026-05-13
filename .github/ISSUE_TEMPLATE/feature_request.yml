@@ -1,0 +1,31 @@
+name: Feature request
+description: Sugira uma melhoria ou nova funcionalidade
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou necessidade
+      description: Que necessidade meteorológica, de registro ou consulta essa ideia resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Como você imagina a solução?
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Restrições importantes
+      options:
+        - label: Deve manter o projeto leve
+        - label: Não deve adicionar recursos comerciais, anúncios, analytics ou rastreamento
+        - label: Deve funcionar bem em GitHub Pages
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
