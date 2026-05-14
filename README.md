@@ -138,6 +138,8 @@ The workflow runs:
 npm run collect:weather
 ```
 
+If the GitHub repository secrets are not configured yet, the workflow skips collection and finishes without failing. After `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are added, the same workflow starts collecting normally.
+
 The script:
 
 - Selects active locations where `collect_daily = true`
